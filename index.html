@@ -63,15 +63,51 @@
 
     <div class="col-md">
       <!-- Central Section -->
-      <section class="py-5 text-center container">
+      <section class="py-5 text-justify container">
         <div class="row py-lg-5">
-          <div class="col-lg-6 col-md-8 mx-auto">
+          <div class="col-md mx-auto">
             <h1 class="fw-light">Climate vs. Latitude</h1>
-            <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-            <p>
-              <a href="#" class="btn btn-primary my-2">Main call to action</a>
-              <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            <p class="lead text-muted"> 
+            This page provides the visualizations created for the
+             results of our weather analysis for 600 cities, 
+            comparing the temperature, wind speed, cloudiness 
+            and humidity against the city's geographical latitute.
+            </p>  
+            <p>The weather data and cities listing were retrieved from the 
+              API at <a href="https://openweathermap.org/api"> 
+                openweathermap.org</a>.
             </p>
+            <p>
+              The process followed to create the weather dataset
+               was:
+            <ul>
+              <li>Download the cities listing (in json format) from the website and upload it into a Pandas dataframe.</li>
+              <li>Randomly select 600 cities from the full list, and obtain the weather facts (temperature, wind speed, cloudiness and humidity) for each one, 
+                  the data was then uploaded to another Pandas 
+                  dataframe and merged with the cities 
+                  dataframe
+              </li>
+            </ul>
+            We then used <a href="https://matplotlib.org">the 
+              matplotlib python library</a> 
+              to produce the visualizations, using scatter 
+              plots to compare: 
+            <ul>
+              <li>Temperatures against latitue (Visualization 1)</li>
+              <li>Humidity against latitute (Visualization 2)</li>
+              <li>Cloudiness against latitute (Visualization 3)</li>
+              <li>Wind speed against latitude (Visualization 4)</li>
+              </ul>
+              </p>
+              <p>
+              Click on the thumbnail images on the right to access the visualization's page.  You can also access them via the "Plots" menu on the navigation menu.
+              
+              Two additional pages are provided with additional information:
+              <ul>
+              <li><a href="./html/comparison.html">Comparisons</a> - Displays all scatter plots in one page, for comparison</li>
+              <li><a href="./html/data.html">Data</a> - Shows the full table with the data that was used to produce the visualizations</li>
+              </ul>
+              </p>
           </div>
         </div>
       </section>
