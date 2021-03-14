@@ -13,25 +13,50 @@
   <script src="https://kit.fontawesome.com/2ce6145945.js" crossorigin="anonymous"></script>
 
     <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
      
   </head>
   <body>
     
-<header>
-  <div class="navbar navbar-dark bg-dark shadow-sm">
-    <div class="container">
-      <a href="#" class="navbar-brand d-flex align-items-center">
-        <i class="fas fa-globe-americas"></i>
-        <strong class="px-1"> Latitude</strong>
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </div>
-</header>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm navbar-expand-lg">
+        <div class="container">
+          <a href="./index.html" class="navbar-brand d-flex align-items-center">
+            <i class="fas fa-globe-americas"></i>
+            <strong class="px-1"> Latitude</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarHeader" aria-controls="navbarHeader" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarHeader">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+                   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./html/vis1.html">Visualization1</a></li>
+                  <li><a class="dropdown-item" href="./html/vis2.html">Visualization2</a></li>
+                  <li><a class="dropdown-item" href="./html/vis3.html">Visualization3</a></li>
+                  <li><a class="dropdown-item" href="./html/vis4.html">Visualization4</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/comparison.html">Comparisons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./html/data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    
 
 <main class="container">
   <div class="row">
@@ -67,28 +92,28 @@
           <div class="row row-cols-sm-4 row-cols-md-2">
 
             <div class="col">
-                <a target="_blank" href="#">
-                  <img class="thumbnail" src="../images/Fig1.png" alt="Visualization 1">
+                <a target="_blank" href="./html/vis1.html">
+                  <img class="thumbnail" src="./images/Fig1.png" alt="Visualization 1">
                 </a> 
             </div>
             <div class="col">
             
-                <a target="_blank" href="#">
-                  <img class="thumbnail" src="../images/Fig2.png" alt="Visualization 1">
+                <a target="_blank" href="./html/vis2.html">
+                  <img class="thumbnail" src="./images/Fig2.png" alt="Visualization 1">
                  </a>
               
             </div>
             <div class="col">
           
-                <a target="_blank" href="#">
-                  <img class="thumbnail" src="../images/Fig3.png" alt="Visualization 1">
+                <a target="_blank" href="./html/vis3.html">
+                  <img class="thumbnail" src="./images/Fig3.png" alt="Visualization 1">
                 </a>
               
             </div>
             <div class="col">
              
-                <a target="_blank" href="#">
-                  <img class="thumbnail" src="../images/Fig4.png" alt="Visualization 1">
+                <a target="_blank" href="./html/vis4.html">
+                  <img class="thumbnail" src="./images/Fig4.png" alt="Visualization 1">
                 </a>
              
             </div>
@@ -101,16 +126,15 @@
   </div>
 
 </main>
-
 <footer class="text-muted py-5">
   <div class="container">
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+    <p class="mb-1">UCF Data Analysis And Visualization Bootcamp - Homework 11 - Web Challenge </p>
+    <p class="mb-0">Visit the bootcamp <a href="https://bootcamp.ce.ucf.edu/data/" target="_blank">web page</a>.</p>
   </div>
 </footer>
 
 
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
 
       
   </body>
